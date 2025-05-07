@@ -21,9 +21,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 bg-dark text-white`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -31,7 +29,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold"
           >
-            <Link href="/">Your Name</Link>
+            <Link href="/">Faiza Nageen</Link>
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-4">
